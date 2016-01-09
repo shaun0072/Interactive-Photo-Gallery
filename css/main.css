@@ -1,0 +1,78 @@
+/***********Global Styles************/
+
+body {
+	font-size: 16px;
+}
+.wrapper {
+	margin: 0 auto;
+	max-width: 1040px;
+}
+#search input {
+	clear: both;
+    display: block;
+    margin: 30px auto 23px;
+    width: 460px;
+    height: 47px;
+    border-radius: 5px;
+    border: 2px solid rgba(229, 229, 229, 1);
+	padding-left: 10px;
+	font-size: 1em;
+	box-sizing: border-box;
+}
+#search input:focus {
+	border: 2px solid rgba(180, 180, 180, 1);
+	outline: none;
+}
+#gallery a {
+	display: inline-block;
+	width: 25%;
+	padding: 25px 30px;
+	box-sizing: border-box;
+	margin: -2px;
+}
+#gallery a img {
+	width: 100%;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.cf:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+}   
+/***********Media Queries************/
+
+
+@media (max-width: 600px) {
+	#search input {
+		width: 90%;
+	}
+	#gallery a {
+		display: inline-block;
+		width: 50%;
+		padding: 15px 10px;
+		margin: -2px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

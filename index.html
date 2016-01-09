@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Photo Gallery</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="js/fancyapps-fancyBox-18d1712/source/jquery.fancybox.css" />
+		<link rel="stylesheet" href="js/fancyapps-fancyBox-18d1712/source/helpers/jquery.fancybox-thumbs.css" />
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+
+	<body>
+		<div class="wrapper cf">
+			<div id="search">
+				<input id="filter-search" type="text" placeholder="Search"/>
+			</div>
+			
+			<div id="gallery">
+				<a class="fancybox" data-fancybox-group="fancybox-thumb" href="img/01.jpg" title="I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
+					<img src="img/Thumbnails/01.jpg" alt="Hay Bales" />
+				</a>
+				<a class="fancybox" data-fancybox-group="fancybox-thumb" href="img/02.jpg" title="The lake was so calm today. We had a great view of the snow on the mountains from here.">
+					<img src="img/Thumbnails/02.jpg" alt="Lake" />
+				</a>
+				<a class="fancybox" data-fancybox-group="fancybox-thumb" href="img/03.jpg" title="I hiked to the top of the mountain and got this picture of the canyon and trees below.">
+					<img src="img/Thumbnails/03.jpg" alt="Canyon" />
+				</a>
+				<a class="fancybox" data-fancybox-group="fancybox-thumb" href="img/04.jpg" title="It was amazing to see an iceberg up close, it was so cold but didn’t snow today.">
+					<img src="img/Thumbnails/04.jpg" alt="Iceberg" />
+				</a>
+				<a class="fancybox" data-fancybox-group="fancybox-thumb" href="img/05.jpg" title="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.">
+					<img src="img/Thumbnails/05.jpg" alt="Desert" />
+				</a>
+				<a class="fancybox" data-fancybox-group="fancybox-thumb" href="img/06.jpg" title="Fall is coming, I love when the leaves on the trees start to change color.">
+					<img src="img/Thumbnails/06.jpg" alt="Fall" />
+				</a>
+				<a class="fancybox" data-fancybox-group="fancybox-thumb" href="img/07.jpg" title="I drove past this plantation yesterday, everything is so green!">
+					<img src="img/Thumbnails/07.jpg" alt="Plantation" />
+				</a>
+				<a class="fancybox" data-fancybox-group="fancybox-thumb" href="img/08.jpg" title="My summer vacation to the Oregon Coast. I love the sandy dunes!">
+					<img src="img/Thumbnails/08.jpg" alt="Dunes" />
+				</a>
+				<a class="fancybox" data-fancybox-group="fancybox-thumb" href="img/09.jpg" title="We enjoyed a quiet stroll down this countryside lane. ">
+					<img src="img/Thumbnails/09.jpg" alt="Countryside Lane" />
+				</a>
+				<a class="fancybox" data-fancybox-group="fancybox-thumb" href="img/10.jpg" title="Sunset at the coast! The sky turned a lovely shade of orange.">
+					<img src="img/Thumbnails/10.jpg" alt="Sunset" />
+				</a>
+				<a class="fancybox" data-fancybox-group="fancybox-thumb" href="img/11.jpg" title="I did a tour of a cave today and the view of the landscape below was breathtaking.">
+					<img src="img/Thumbnails/11.jpg" alt="Cave" />
+				</a>
+				<a class="fancybox" data-fancybox-group="fancybox-thumb" href="img/12.jpg" title="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.">
+					<img src="img/Thumbnails/12.jpg" alt="Bluebells" />
+				</a>
+			</div>
+		</div>
+
+		<script src="js/fancyapps-fancyBox-18d1712/lib/jquery-1.10.1.min.js"></script>
+		<script src="js/fancyapps-fancyBox-18d1712/source/jquery.fancybox.js"></script>
+		<script src="js/fancyapps-fancyBox-18d1712/source/helpers/jquery.fancybox-thumbs.js"></script>
+		<script src="js/filter-search.js"></script>
+		<script>
+			$(document).ready(function() {
+			$(".fancybox").fancybox({
+				openEffect	: 'elastic',
+				closeEffect	: 'elastic',
+				helpers	: {
+				title	: {
+					type: 'outside'
+				},
+				thumbs	: {
+					width	: 50,
+					height	: 50
+				}
+			}
+				
+			});
+		});
+		</script>
+	</body>
+</html>
